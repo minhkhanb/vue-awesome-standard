@@ -24,7 +24,7 @@ module.exports = {
   ],
   testURL: 'http://localhost/',
   watchPlugins: [
-    'node_modules\\jest-watch-typeahead\\filename.js',
-    'node_modules\\jest-watch-typeahead\\testname.js',
+    '**/node_modules/jest-watch-typeahead/filename.js',
+    '**/node_modules/jest-watch-typeahead/testname.js',
   ],
 };
