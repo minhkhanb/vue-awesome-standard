@@ -62,7 +62,7 @@
           </v-list-item-action>
 
           <v-list-item-title class="font-weight-light">
-            Upgrade To PRO
+            Say hi
           </v-list-item-title>
         </v-list-item>
       </v-list>
@@ -90,16 +90,6 @@ export default {
         to: '/',
         icon: 'mdi-view-dashboard',
         text: 'Dashboard',
-      },
-      {
-        to: '/user-profile',
-        icon: 'mdi-account',
-        text: 'User Profile',
-      },
-      {
-        to: '/table-list',
-        icon: 'mdi-clipboard-outline',
-        text: 'Table List',
       },
       {
         to: '/typography',
