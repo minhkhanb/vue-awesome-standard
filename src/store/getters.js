@@ -1,5 +1,5 @@
-import { GETTERS } from './const';
+// https://vuex.vuejs.org/en/getters.html
 
-export const getters = {
-  [GETTERS.IS_LOADING]: ({ loadingStack }) => (loadingStack.length > 0),
+export default {
+  //
 };

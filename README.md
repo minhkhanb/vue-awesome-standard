@@ -29,7 +29,7 @@ Development source code is inside `src` folder. Here the standard structure:
     |- store (vuex - app global data store)
     |   |_ modules
     |- views (pages)
-    |_ router.js
+    |_ indexjs
 
 ```
 

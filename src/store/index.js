@@ -1,23 +1,31 @@
+/**
+ * Vuex
+ *
+ * @library
+ *
+ * https://vuex.vuejs.org/en/
+ */
+
+// Lib imports
 import Vue from 'vue';
-import Vuex, { Store } from 'vuex';
-import { state } from './state';
-import { getters } from './getters';
-import { actions } from './actions';
-import { mutations } from './mutations';
-import user, { MODULE_NAME as USER_MODULE_NAME } from './user';
+import Vuex from 'vuex';
+
+// Store functionality
+import actions from './actions';
+import getters from './getters';
+import modules from './modules';
+import mutations from './mutations';
+import state from './state';
 
 Vue.use(Vuex);
 
-export * from './const';
-
-const store = new Store({
-  state, // global state
-  getters, // global getters
-  actions, // global actions
-  mutations, // global mutations
-  modules: {
-    [USER_MODULE_NAME]: user,
-  },
+// Create a new store
+const store = new Vuex.Store({
+  actions,
+  getters,
+  modules,
+  mutations,
+  state,
 });
 
 export default store;
